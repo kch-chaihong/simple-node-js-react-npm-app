@@ -6,11 +6,6 @@ pipeline {
         }
     }
     stages {
-	stage('Checkout SCM') {
-	    steps {
-		git url: 'https://github.com/kch-chaihong/simple-node-js-react-npm-app.git'
-	    }
-   	 }
         stage('Build') { 
             steps {
                 sh 'npm install' 
